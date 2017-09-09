@@ -66,11 +66,11 @@ module.exports = {
     test: /\.scss$/,
     include: paths.src,
     use: [{
-      loader: "style-loader" // creates style nodes from JS strings
+      loader: 'style-loader' // creates style nodes from JS strings
     }, {
-        loader: "css-loader" // translates CSS into CommonJS
+      loader: 'css-loader' // translates CSS into CommonJS
     }, {
-        loader: "sass-loader" // compiles Sass to CSS
+      loader: 'sass-loader' // compiles Sass to CSS
     }]
   },
 
@@ -99,6 +99,7 @@ module.exports = {
 
   resolve: {
     alias: {
+      services: paths.services,
       src: paths.src,
       components: join(paths.src, 'components'),
       utils: join(paths.src, 'utils')
