@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { loadProducts } from './productsActions'
+import { loadProducts } from '../productsActions'
 
 // componentes
 import ListProducts from './listProducts'
