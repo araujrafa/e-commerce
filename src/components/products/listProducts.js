@@ -7,20 +7,25 @@ const product = props => {
     const products = props.listProducts.produtos || []
     return products.map((elem, key) => {
       return (
-        <div className='c-product' key={key} >
-          <img src={elem.image} className='c-product__image' />
-          <h3 className='c-product__name'>{elem.name}</h3>
-          <p className='  c-product__description'>{elem.description}</p>
-          <Link to={`/${elem.name}`}>Modus Create</Link>
-        </div>
+        <li className='c-product' key={key} >
+          <div className='c-product__container c-product__container--image'>
+            <Link to={`/${elem.name}`}><img src={elem.image} className='c-product__image' /></Link>
+          </div>
+          <div className='c-product__container c-product__container--infos'>
+            <Link to={`/${elem.name}`}><h3 className='c-product__name'>{elem.name}</h3></Link>
+            <p className='c-product__salesman'>Por {elem.salesman}</p>
+            <h3 className='c-product__price'>R$ {elem.price}</h3>
+            <p className='c-product__infos'>{`${elem.status} - ${elem.local}`}</p>
+          </div>
+        </li>
       )
     })
   }
 
   return (
-    <div>
+    <ul className='c-listProducts'>
       {renderList()}
-    </div>
+    </ul>
   )
 }
 

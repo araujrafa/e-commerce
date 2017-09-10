@@ -13,7 +13,7 @@ class Products extends Component {
 
   render () {
     return (
-      <div>
+      <div className='container-page'>
         <h1>Lista de Produtos</h1>
         <ListProducts listProducts={this.props.products} />
       </div>

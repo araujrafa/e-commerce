@@ -1,0 +1,38 @@
+.c-button {
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Heebo-Bold';
+  outline: none;
+}
+
+.c-button--big {
+  font-size: 0.9375rem;
+  padding: em(12px) em(10px)
+}
+
+.c-button--green {
+  color: #fff;
+  border-color: #79bd1a;  
+  background-color: #79bd1a;
+}
+
+.c-button--green:hover {
+  background-color: #79bd1a;  
+  color: #fff;
+}
+
+.c-button--small {
+  font-size: 0.8125rem;
+  padding: 0.6875em 1.625em
+}
+
+.c-button--orange {
+  color: #f98100;
+  border-color: #f98100;
+}
+
+.c-button--orange:hover {
+  background-color: #f98100;  
+  color: #fff;
+}

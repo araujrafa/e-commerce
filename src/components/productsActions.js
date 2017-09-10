@@ -10,20 +10,14 @@ export function loadProducts () {
   }
 }
 
-export function setDescription () {
+export function setDescription (name) {
   return (dispatch, getState) => {
-    const productsList = getState().productsList;
-    console.log(productsList)
+    const productsList = getState().products.productsList.produtos
 
-    // const hotels = itens.filter(elem => {
-    //   if (elem.rate == star) {
-    //     return elem
-    //   }
-    // })
+    const descriptionProduct = productsList.filter(elem => {
+      if (elem.name === name) return elem
+    })
 
-    // const hoteis = {
-    //   hotels
-    // }
-    dispatch({type: 'SET_DESCRIPTION', payload: productsList})
+    return dispatch({type: 'SET_DESCRIPTION', payload: descriptionProduct})
   }
 }

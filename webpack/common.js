@@ -103,7 +103,7 @@ module.exports = {
       src: paths.src,
       components: join(paths.src, 'components'),
       utils: join(paths.src, 'utils'),
-      services: paths.services      
+      services: paths.services
     }
   }
 }

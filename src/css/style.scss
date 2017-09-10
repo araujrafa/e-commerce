@@ -5,3 +5,25 @@
   padding: 0;
   margin: 0;  
 }
+
+a {
+  text-decoration: none;
+  outline: none  
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.container-page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@import 'common/mixins';
+@import 'common/button';
+
+@import 'description/index';
+@import 'products/index';
+@import 'products/listProducts';
