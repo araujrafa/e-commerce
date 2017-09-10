@@ -5,7 +5,8 @@ const { join } = require('path')
 const paths = {
   root: join(__dirname, '..'),
   src: join(__dirname, '..', 'src'),
-  dist: join(__dirname, '..', 'dist')
+  dist: join(__dirname, '..', 'dist'),
+  services: join(__dirname, '..', 'services')
 }
 
 module.exports = {
@@ -99,10 +100,10 @@ module.exports = {
 
   resolve: {
     alias: {
-      services: paths.services,
       src: paths.src,
       components: join(paths.src, 'components'),
-      utils: join(paths.src, 'utils')
+      utils: join(paths.src, 'utils'),
+      services: paths.services      
     }
   }
 }

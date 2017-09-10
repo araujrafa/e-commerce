@@ -20,7 +20,7 @@ class App extends Component {
           <Route exact path='/' component={Products} />
           <Route path='/:id' component={Description} />
         </div>
-      </ Router>
+      </Router>
     )
   }
 }
