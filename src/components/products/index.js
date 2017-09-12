@@ -5,6 +5,7 @@ import { loadProducts } from '../productsActions'
 
 // componentes
 import ListProducts from './listProducts'
+import Menu from '../menu/'
 
 class Products extends Component {
   componentWillMount () {
@@ -13,9 +14,11 @@ class Products extends Component {
 
   render () {
     return (
-      <div className='container-page'>
-        <h1>Lista de Produtos</h1>
-        <ListProducts listProducts={this.props.products} />
+      <div>
+        <Menu />
+        <div className='container-page'>
+          <ListProducts listProducts={this.props.products} />
+        </div>
       </div>
     )
   }
