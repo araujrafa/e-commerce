@@ -4,19 +4,18 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { setDescription, loadProducts } from '../productsActions'
 import { Link } from 'react-router-dom'
-import pagarme from 'pagarme'
+// import pagarme from 'pagarme' -> Não estou usando pois não está no servidor!
 import Menu from '../menu/'
-import ReactModal from 'react-modal';
+import ReactModal from 'react-modal'
 
 class Description extends Component {
   constructor () {
-    super();
+    super()
     this.state = {
       showModal: false
-    };
-    
-    this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+    this.handleOpenModal = this.handleOpenModal.bind(this)
+    this.handleCloseModal = this.handleCloseModal.bind(this)
   }
 
   componentWillMount () {
@@ -24,7 +23,8 @@ class Description extends Component {
     this.props.setDescription(this.props.match.params.id)
   }
 
-  finishTransaction () {
+  // finishTransaction () { -> Função de ligação da api -> Nâo esta usando pois esta gerando erro, porque não esta
+    //                                                     no servidor
     // pagarme.client.connect({ api_key: 'ak_test_HtuT2Dj1KT1kTCaoq1b2wuTmAcfhPG' })
     //   .then(client => client.transactions.create({
     //     amount: 1000,
@@ -33,24 +33,24 @@ class Description extends Component {
     //     card_expiration_date: '1225',
     //     card_cvv: '123',
     //   }))
-  }
+  // }
 
-  reloadPage(name) {
-    this.props.setDescription(name)    
+  reloadPage (name) {
+    this.props.setDescription(name)
   }
 
   related () {
     const products = this.props.products.produtos || []
     const description = this.props.description[0] || []
-    let count = 0  
+    let count = 0
     return products.map((elem, index) => {
-      if (elem.type_product === description.type_product & elem.name != description.name & count < 2) {
+      if (elem.type_product === description.type_product & elem.name !== description.name & count < 2) {
         count++
         return (
           <Link to={`/${elem.name}`} className='c-description__related' onClick={() => this.reloadPage(elem.name)} key={index}>
             <div className='c-description__container c-description__container--images-related'>
               <img src={elem.image} />
-            </div>  
+            </div>
             <h2 className='c-description__related-name'>{elem.name}</h2>
             <h2 className='c-description__related-price'>R$ {elem.price}</h2>
           </Link>
@@ -60,11 +60,11 @@ class Description extends Component {
   }
 
   handleOpenModal () {
-    this.setState({ showModal: true });
+    this.setState({ showModal: true })
   }
-  
+
   handleCloseModal () {
-    this.setState({ showModal: false });
+    this.setState({ showModal: false })
   }
 
   render () {
@@ -81,7 +81,7 @@ class Description extends Component {
             <h2 className='c-description__name'>{description.name}</h2>
             <p className='c-description__infos'>{`${description.status} - ${description.local}`}</p>
             <h3 className='c-description__value'>R$ {description.price}</h3>
-            <Button style='green' label='Finalizar compra' size='big' click={this.handleOpenModal}/>
+            <Button style='green' label='Finalizar compra' size='big' click={this.handleOpenModal} />
           </div>
           <section className='c-description__container c-description__container--description'>
             <h3 className='c-description__title'>Descrição do produto</h3>
@@ -92,9 +92,9 @@ class Description extends Component {
             </div>
           </section>
         </section>
-        <ReactModal 
-            isOpen={this.state.showModal}
-            contentLabel=""
+        <ReactModal
+          isOpen={this.state.showModal}
+          contentLabel=''
         >
           <button onClick={this.handleCloseModal} className='c-modal__close'>X</button>
           <div className='c-modal'>

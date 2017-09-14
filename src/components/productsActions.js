@@ -1,4 +1,4 @@
-import 'isomorphic-fetch'
+import fetch from 'isomorphic-fetch'
 
 export function loadProducts () {
   return dispatch => {
