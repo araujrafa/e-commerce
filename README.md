@@ -11,7 +11,7 @@ Sobe o ambiente de desenvolvimento
 $ npm run dev
 $ yarn dev
 ```
-Abrirá no localhost:3000
+localhost:3000
 
 Roda a tarefa de lint
 ```sh
