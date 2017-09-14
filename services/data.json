@@ -1,0 +1,114 @@
+{
+  "produtos": [
+    {
+      "name": "Conversor digital e antena digital interna externa Tomate MDC-999",
+      "description": "Conversor digital e antena digital interna externa Original Tomate. Para quem não conhece esta é uma das melhores marcas na atualidade, sendo considerada por diversas revistas e sites como o melhor conversor digital do mercado.",
+      "image": "https://29028l.ha.azioncdn.net/img/2017/02/produto/42514/19/large/caixa-conversor-digital-terreste-lemon-lm3000-full-hd-slim-preto.jpg",
+      "price": 90,
+      "local": "São Paulo",
+      "status": "Usado",
+      "salesman": "Eduardo Menoz",
+      "idsalesman": "ladsads1531",
+      "type_product": "eletronico"
+    },
+    {
+      "name": "Celular Apple Iphone 5s 16gb Original Usado + Fone De Ouvido",
+      "description": "iPhone 5s Original Usado Carregador e cabo USB Fone de Ouvido Modal Roxo.",
+      "image": "https://http2.mlstatic.com/celular-apple-iphone-5s-16gb-original-usado-fone-de-ouvido-D_NQ_NP_608584-MLB25819236081_072017-O.webp",
+      "price": 797,
+      "local": "Minas Gerais",
+      "status": "Usado",
+      "salesman": "Igor Apolinario",
+      "idsalesman": "asdjsdakl32",
+      "type_product": "celular"      
+    },
+    {
+      "name": "Notebook Lenovo T430 Core I5 4gb 320gb Usado + Brinde!",
+      "description": "Notebook Lenovo T430 Core I5 4gb 320gb U S A D O",
+      "image": "https://http2.mlstatic.com/notebook-acer-es1-572-3562-intel-core-i3-4gb-ram-1tb-hd-156-D_NQ_NP_659384-MLB25631927831_052017-O.webp",
+      "price": 850,
+      "local": "São Paulo",
+      "status": "Usado",
+      "salesman": "Rafael Menoz",
+      "idsalesman": "asdjsdakl32",
+      "type_product": "eletronico"      
+    },
+    {
+      "name": "Touca - Gorro - Dupla Face Para Ser Usado Dos Dois Lados",
+      "description": "Gorro em fio 100% acrílico feito em tricô a máquina -  dupla face - para ser usado dos dois lados - duas cores - vire do avesso e use em outra côr",
+      "image": "https://http2.mlstatic.com/touca-gorro-dupla-face-para-ser-usado-dos-dois-lados-D_NQ_NP_407515-MLB25246233202_122016-O.webp",
+      "price": 22,
+      "local": "Santos",
+      "status": "Usado",
+      "salesman": "Leonardo Menoz",
+      "idsalesman": "1sadds123",
+      "type_product": "roupa"      
+    },
+    {
+      "name": "Apple Iphone 6 16gb Original Usado",
+      "description": "Não possui risco na tela, mas pode conter na carcaça.",
+      "image": "https://http2.mlstatic.com/apple-iphone-6-16gb-original-usado-D_NQ_NP_339625-MLB25463443986_032017-O.webp",
+      "price": 1.390,
+      "local": "Rio de Janeiro",
+      "status": "Usado",
+      "salesman": "Bernado",
+      "idsalesman": "adsdd123",
+      "type_product": "celular"      
+    },
+    {
+      "name": "Tablet Positivo Ypy L1050 16gb Tela 10.1 Hdmi Usado",
+      "description": "O Positivo Ypy L1050 é um tablet concebido para o consumo de conteúdos digitais. Leve, fácil de usar e com muitas horas contínuas de uso sem recarga, o Positivo Ypy foi criado para acompanhar o brasileiro onde ele for.",
+      "image": "https://http2.mlstatic.com/tablet-positivo-ypy-l1050-16gb-tela-101-hdmi-usado-D_NQ_NP_703811-MLB20648094260_032016-F.webp",
+      "price": 299,
+      "local": "Fortaleza",
+      "status": "Usado",
+      "salesman": "Henrique Dourado",
+      "idsalesman": "quweioe12",
+      "type_product": "celular"      
+    },
+    {
+      "name": "Iphone 6 16gb Seminovo Modelo A1549 + Carregador Belkin Novo",
+      "description": "Aparelho seminovo em ótima condição estética, 100% operacional.",
+      "image": "https://http2.mlstatic.com/iphone-6-16gb-seminovo-modelo-a1549-carregador-belkin-novo-D_NQ_NP_715757-MLB25709442326_062017-O.webp",
+      "price": 1.299,
+      "local": "Belo Horizonte",
+      "status": "Usado",
+      "salesman": "Lucas Araujo",
+      "idsalesman": "asdjsdakl32",
+      "type_product": "celular"      
+    },
+    {
+      "name": "Mala Samsonite Spin 27 Polegadas - Preta - Usada 1 Vez",
+      "description": "Quatro rodas ... zero esforço. As rodas giratórias esféricas proporcionam uma estabilidade superior e permitem uma rotação vertical de 360 graus sem qualquer peso no seu braço.",
+      "image": "https://http2.mlstatic.com/kit-conjunto-de-3-malas-de-viagem-village-c-rodinhas-D_NQ_NP_925446-MLB25559007118_052017-O.webp",
+      "price": 400,
+      "local": "São Paulo",
+      "status": "Usado",
+      "salesman": "Rafael Araujo",
+      "idsalesman": "saddsad123",
+      "type_product": "eletronico"      
+    },
+    {
+      "name": "Câmera Ip Foscam C1 Hd P2p - Dia E Noite Com Led Ir - Usada!",
+      "description": "A melhor do mercado.",
+      "image": "https://http2.mlstatic.com/camera-ip-wireless-seguranca-viso-noturna-via-internete-360-D_NQ_NP_533025-MLB25353125378_022017-O.webp",
+      "price": 100,
+      "local": "Minas Gerais",
+      "status": "Usado",
+      "salesman": "Menoz e Fabino",
+      "idsalesman": "asdjsdakl32",
+      "type_product": "eletronico"      
+    },
+    {
+      "name": "Lg K10 Tv K430tv Tela 5.3 16gb 2chip Dourado Usado Excelente",
+      "description": "Smartphone LG K10 TV 16GB Dourado Dual Chip 4G - Câm 13MP + Selfie 8MP Flash Tela 5.3” HD Octa Core.",
+      "image": "https://http2.mlstatic.com/lg-k10-tv-k430tv-tela-53-16gb-2chip-dourado-usado-excelente-D_NQ_NP_725897-MLB25583728824_052017-F.webp",
+      "price": 539,
+      "local": "São Paulo",
+      "status": "Usado",
+      "salesman": "Julia Queiroz",
+      "idsalesman": "asdjsdakl32",
+      "type_product": "celular"      
+    }
+  ]
+}

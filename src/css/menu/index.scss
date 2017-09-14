@@ -1,0 +1,12 @@
+.c-menu {
+  background-color:#3483fa;
+  height: 50px;
+  margin-bottom: 10px; 
+  padding-top: 15px;
+  width: 100%;
+
+  &__link {
+    color: #fff;
+    font-weight: bold;
+  }
+}

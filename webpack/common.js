@@ -5,7 +5,8 @@ const { join } = require('path')
 const paths = {
   root: join(__dirname, '..'),
   src: join(__dirname, '..', 'src'),
-  dist: join(__dirname, '..', 'dist')
+  dist: join(__dirname, '..', 'dist'),
+  services: join(__dirname, '..', 'services')
 }
 
 module.exports = {
@@ -66,11 +67,11 @@ module.exports = {
     test: /\.scss$/,
     include: paths.src,
     use: [{
-      loader: "style-loader" // creates style nodes from JS strings
+      loader: 'style-loader' // creates style nodes from JS strings
     }, {
-        loader: "css-loader" // translates CSS into CommonJS
+      loader: 'css-loader' // translates CSS into CommonJS
     }, {
-        loader: "sass-loader" // compiles Sass to CSS
+      loader: 'sass-loader' // compiles Sass to CSS
     }]
   },
 
@@ -101,7 +102,8 @@ module.exports = {
     alias: {
       src: paths.src,
       components: join(paths.src, 'components'),
-      utils: join(paths.src, 'utils')
+      utils: join(paths.src, 'utils'),
+      services: paths.services
     }
   }
 }
