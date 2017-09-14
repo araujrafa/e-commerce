@@ -1,0 +1,16 @@
+.c-modal {
+  margin-top: 15%;
+  text-align: center;
+
+  &__close {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__text {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+}

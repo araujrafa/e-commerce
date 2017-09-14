@@ -16,20 +16,39 @@
       border-left: 0;      
       padding: 32px;
       width: 35%;
+
+      @media only screen and (max-width: 768px) {
+        border-top: none;
+        width: 100%;
+      }
     }
   
     &--images {
       text-align: center;
       width: 65%;
 
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 468px) {
+        img {
+          width: 250px
+        }
+      }
+
       &-related {
         text-align: center;        
-        width: 100%
+        width: 100%;
       }
     }
 
     &--products {
       display: flex;
+
+      @media only screen and (max-width: 468px) {
+        display: block
+      }
     }
 
     &--related {
@@ -55,6 +74,10 @@
     border: 1px solid #eee;
     margin-right: 5%;
     width: 230px;
+
+    @media only screen and (max-width: 468px) {
+      border: none
+    }
     
     img {
       width: 150px;  

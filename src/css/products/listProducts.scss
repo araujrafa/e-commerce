@@ -39,11 +39,24 @@ $font-color: #333;
     &--infos {
       height: 166px;
       width: 70%;
+
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+      }
     }
 
     &--image {
       margin: 24px;
       min-width: 160px;
+
+      @media only screen and (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 

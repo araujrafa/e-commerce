@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Button from 'components/common/button'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { setDescription } from '../productsActions'
+import { setDescription, loadProducts } from '../productsActions'
 import { Link } from 'react-router-dom'
 import pagarme from 'pagarme'
 import Menu from '../menu/'
@@ -20,6 +20,7 @@ class Description extends Component {
   }
 
   componentWillMount () {
+    this.props.loadProducts()
     this.props.setDescription(this.props.match.params.id)
   }
 
@@ -34,8 +35,8 @@ class Description extends Component {
     //   }))
   }
 
-  reloadPage() {
-    this.props.setDescription(this.props.match.params.id)    
+  reloadPage(name) {
+    this.props.setDescription(name)    
   }
 
   related () {
@@ -46,7 +47,7 @@ class Description extends Component {
       if (elem.type_product === description.type_product & elem.name != description.name & count < 2) {
         count++
         return (
-          <Link to={`/${elem.name}`} className='c-description__related' onClick={() => this.reloadPage()} key={index}>
+          <Link to={`/${elem.name}`} className='c-description__related' onClick={() => this.reloadPage(elem.name)} key={index}>
             <div className='c-description__container c-description__container--images-related'>
               <img src={elem.image} />
             </div>  
@@ -93,13 +94,14 @@ class Description extends Component {
         </section>
         <ReactModal 
             isOpen={this.state.showModal}
-            contentLabel="Minimal Modal Example"
+            contentLabel=""
         >
-          <button onClick={this.handleCloseModal}>Close Modal</button>
-
-          {description.price / 100 * 60} vendedor <br/>
-          {description.price / 100 * 25} eu <br/>
-          {description.price / 100 * 15} parceiro <br/>
+          <button onClick={this.handleCloseModal} className='c-modal__close'>X</button>
+          <div className='c-modal'>
+            <h2 className='c-modal__text'>{description.price / 100 * 60} Vendedor irá ganhar </h2>
+            <h2 className='c-modal__text'>{description.price / 100 * 25} Minha parte </h2>
+            <h2 className='c-modal__text'>{description.price / 100 * 15} Nosso parceiro </h2>
+          </div>
         </ReactModal>
       </div>
     )
@@ -111,6 +113,6 @@ const mapStateToProps = state => ({
   products: state.products.productsList
 })
 
-const mapDispatchToProps = dispatch => bindActionCreators({setDescription}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({setDescription, loadProducts}, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(Description)

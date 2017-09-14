@@ -13,11 +13,10 @@ export function loadProducts () {
 export function setDescription (name) {
   return (dispatch, getState) => {
     const productsList = getState().products.productsList.produtos
-
     const descriptionProduct = productsList.filter(elem => {
       if (elem.name === name) return elem
     })
-
-    return dispatch({type: 'SET_DESCRIPTION', payload: descriptionProduct})
+    loadProducts()
+    dispatch({type: 'SET_DESCRIPTION', payload: descriptionProduct})
   }
 }
